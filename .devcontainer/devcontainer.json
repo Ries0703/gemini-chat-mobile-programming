@@ -18,5 +18,5 @@
     },
     "ghcr.io/devcontainers/features/git:1": {}
   },
-"postCreateCommand": "sudo chown -R androidusr:androidusr /home/androidusr/.ssh /home/androidusr/.npm-global && npm install -g @anthropic-ai/claude-code && echo 'Environment Ready!'"
+"postCreateCommand": "npm install -g @anthropic-ai/claude-code && echo 'Environment Ready!'"
 }

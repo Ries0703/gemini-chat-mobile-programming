@@ -1,0 +1,1 @@
+docker exec -u 0 android-vibe-coder sh -c "mkdir -p /home/androidusr/.ssh /home/androidusr/.npm-global && chown -R androidusr:androidusr /home/androidusr/.ssh /home/androidusr/.npm-global"
