@@ -2,14 +2,11 @@
   "name": "Android Vibe Environment",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "android-vibe",
-  
-  // QUAN TRỌNG: Chỉ định thư mục làm việc đúng với volume đã mount
   "workspaceFolder": "/home/androidusr/my-app",
-
-  // QUAN TRỌNG: Báo cho VS Code biết user trong này là androidusr
+  
+  // DÒNG QUAN TRỌNG NHẤT - NẾU THIẾU DÒNG NÀY LÀ LỖI NGAY
   "remoteUser": "androidusr",
 
-  // Cài đặt Node.js và Git thông qua Features (chuẩn và ổn định hơn apt-get tay)
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "username": "androidusr",
@@ -21,9 +18,5 @@
     },
     "ghcr.io/devcontainers/features/git:1": {}
   },
-
-  // Sau khi container tạo xong thì chạy lệnh này để cài Claude Code
-  // (Chạy dưới quyền androidusr nên không cần sudo nếu npm config đúng, 
-  // nhưng devcontainer feature node đã xử lý quyền cho bạn rồi)
   "postCreateCommand": "npm install -g @anthropic-ai/claude-code && echo 'Ready to code!'"
 }
