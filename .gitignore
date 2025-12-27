@@ -1,0 +1,31 @@
+# --- Build System & Local Config ---
+*/build
+.gradle
+local.properties
+.kotlin
+
+# --- IDE: Android Studio / IntelliJ ---
+# Chặn toàn bộ folder .idea để tránh conflict xml cấu hình người dùng
+.idea
+*.iml
+*.ipr
+*.iws
+
+# --- IDE: VS Code (Hybrid Workflow) ---
+.vscode
+
+# --- C++ / Native (Nếu sau này dùng NDK) ---
+.externalNativeBuild
+.cxx
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Security & Outputs (Rất quan trọng) ---
+*.jks
+*.keystore
+*.p12
+google-services.json
+*.apk
+*.aab
